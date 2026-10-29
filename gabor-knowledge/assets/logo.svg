@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="GH"><rect width="256" height="256" rx="48" fill="#123B5D"/><circle cx="128" cy="128" r="88" fill="none" stroke="#8EC5E8" stroke-width="8"/><text x="128" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#FFFFFF">GH</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="GH monogram">
+  <rect width="256" height="256" rx="48" fill="#f6f4ef"/>
+  <g transform="translate(32 32) scale(4)" fill="none" stroke="#315b4c" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M24 12H14a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h10V24h-8M30 12v24M30 24h10M40 12v24"/>
+  </g>
+</svg>

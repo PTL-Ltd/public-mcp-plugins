@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ptl-knowledge-network",
   "version": "1.0.0",
-  "description": "Connect the public Gabor Harsanyi, PTL and AI TPM knowledge servers.",
+  "description": "Connect the public Gábor Harsányi, PTL and AI TPM knowledge servers.",
   "author": {
     "name": "Providing Technical Leadership Kft.",
     "email": "support@ptl.expert",

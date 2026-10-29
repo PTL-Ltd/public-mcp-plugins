@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AI"><rect width="256" height="256" rx="48" fill="#123B5D"/><circle cx="128" cy="128" r="88" fill="none" stroke="#8EC5E8" stroke-width="8"/><text x="128" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#FFFFFF">AI</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AI TPM decision-path mark">
+  <rect width="256" height="256" rx="48" fill="#faf6ee"/>
+  <g transform="translate(32 32) scale(4)" fill="none" stroke="#a14125" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M5 10h5l9 9M5 38h5l9-9M24 14l10 10-10 10-10-10ZM34 24h10M39 19l5 5-5 5"/>
+  </g>
+</svg>

@@ -39,8 +39,8 @@
           "Show PTL evidence about AI governance.",
           "Build a reading list about cloud transformation."
         ],
-        "brandColor": "#123B5D",
-        "brandColorDark": "#8EC5E8",
+        "brandColor": "#194f49",
+        "brandColorDark": "#cfdaa9",
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/logo.svg"
       },

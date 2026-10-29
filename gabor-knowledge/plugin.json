@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gabor-knowledge",
   "version": "1.0.0",
-  "description": "Search Gabor Harsanyi's published professional profile, credentials, experience and architecture expertise with canonical source links.",
+  "description": "Search Gábor Harsányi's published professional profile, credentials, experience and architecture expertise with canonical source links.",
   "author": {
     "name": "Providing Technical Leadership Kft.",
     "email": "support@ptl.expert",
@@ -19,9 +19,9 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Gabor Harsanyi Knowledge",
+        "displayName": "Gábor Harsányi Knowledge",
         "shortDescription": "Search professional evidence",
-        "longDescription": "Search Gabor Harsanyi's published professional profile, credentials, experience and architecture expertise. Results are read-only public evidence with canonical source links; missing evidence is not treated as a proven capability gap.",
+        "longDescription": "Search Gábor Harsányi's published professional profile, credentials, experience and architecture expertise. Results are read-only public evidence with canonical source links; missing evidence is not treated as a proven capability gap.",
         "developerName": "Providing Technical Leadership Kft.",
         "category": "Productivity",
         "capabilities": [
@@ -38,8 +38,8 @@
           "Build a reading list about cloud expertise.",
           "Assess these job requirements against public evidence."
         ],
-        "brandColor": "#123B5D",
-        "brandColorDark": "#8EC5E8",
+        "brandColor": "#315b4c",
+        "brandColorDark": "#b4c9a6",
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/logo.svg"
       },
