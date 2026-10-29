@@ -10,5 +10,10 @@
   },
   "homepage": "https://ptl.expert",
   "repository": "https://github.com/PTL-Ltd/public-mcp-plugins",
-  "keywords": ["MCP", "knowledge", "architecture", "AI governance"]
+  "keywords": [
+    "MCP",
+    "knowledge",
+    "architecture",
+    "AI governance"
+  ]
 }

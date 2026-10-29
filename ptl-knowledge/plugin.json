@@ -3,34 +3,102 @@
   "name": "ptl-knowledge",
   "version": "1.0.0",
   "description": "Search PTL services, case studies, architecture expertise and published knowledge, and map business problems to relevant service evidence.",
-  "author": {"name":"Providing Technical Leadership Kft.","email":"support@ptl.expert","url":"https://ptl.expert"},
+  "author": {
+    "name": "Providing Technical Leadership Kft.",
+    "email": "support@ptl.expert",
+    "url": "https://ptl.expert"
+  },
   "homepage": "https://ptl.expert",
   "repository": "https://github.com/PTL-Ltd/public-mcp-plugins",
-  "keywords": ["PTL", "services", "architecture", "case studies", "MCP"],
+  "keywords": [
+    "PTL",
+    "services",
+    "architecture",
+    "case studies",
+    "MCP"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName":"PTL Knowledge","shortDescription":"Find PTL service evidence","longDescription":"Search PTL services, case studies, architecture expertise and published knowledge. Map business problems to relevant service evidence and discovery questions without producing binding scope, pricing or commercial commitments.","developerName":"Providing Technical Leadership Kft.","category":"Productivity","capabilities":["Search PTL knowledge","Read published service evidence","Match problems to PTL services"],"websiteURL":"https://ptl.expert","supportURL":"https://ptl.expert/contact","privacyPolicyURL":"https://ptl.expert/privacy","termsOfServiceURL":"https://ptl.expert/legal","defaultPrompt":["Find the most relevant PTL service for this architecture problem.","Show PTL evidence about AI governance.","Build a reading list about cloud transformation."],"brandColor":"#123B5D","brandColorDark":"#8EC5E8","composerIcon":"./assets/icon.svg","logo":"./assets/logo.svg"
+        "displayName": "PTL Knowledge",
+        "shortDescription": "Find PTL service evidence",
+        "longDescription": "Search PTL services, case studies, architecture expertise and published knowledge. Map business problems to relevant service evidence and discovery questions without producing binding scope, pricing or commercial commitments.",
+        "developerName": "Providing Technical Leadership Kft.",
+        "category": "Productivity",
+        "capabilities": [
+          "Search PTL knowledge",
+          "Read published service evidence",
+          "Match problems to PTL services"
+        ],
+        "websiteURL": "https://ptl.expert",
+        "supportURL": "https://ptl.expert/contact",
+        "privacyPolicyURL": "https://ptl.expert/privacy",
+        "termsOfServiceURL": "https://ptl.expert/legal",
+        "defaultPrompt": [
+          "Find the most relevant PTL service for this architecture problem.",
+          "Show PTL evidence about AI governance.",
+          "Build a reading list about cloud transformation."
+        ],
+        "brandColor": "#123B5D",
+        "brandColorDark": "#8EC5E8",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/logo.svg"
       },
       "review": {
         "test_cases": {
           "positive": [
-            {"description":"Search PTL service evidence","prompt":"Find PTL services related to enterprise architecture and cloud transformation.","tools_triggered":"search","expected_behavior":"Return matching published evidence with canonical source links."},
-            {"description":"Retrieve a PTL service document","prompt":"Find PTL's AI governance service evidence and open the most relevant result.","tools_triggered":"search, fetch","expected_behavior":"Search the public corpus and retrieve the selected result by stable ID."},
-            {"description":"Match a problem to a service","prompt":"Our organisation lacks architecture governance across multiple cloud platforms. Which PTL service evidence is relevant?","tools_triggered":"match_problem_to_service","expected_behavior":"Return relevant service and case-study evidence, discovery questions and a contact route."},
-            {"description":"Build a PTL reading list","prompt":"Build a reading list about AI governance, cybersecurity and cloud architecture.","tools_triggered":"build_reading_list","expected_behavior":"Return relevant published evidence with excerpts and canonical links."},
-            {"description":"Assess role requirements","prompt":"Map enterprise architecture, technical leadership and vendor governance requirements to published professional evidence.","tools_triggered":"assess_job_fit","expected_behavior":"Map each requirement to evidence without generating a synthetic score."}
+            {
+              "description": "Search PTL service evidence",
+              "prompt": "Find PTL services related to enterprise architecture and cloud transformation.",
+              "tools_triggered": "search",
+              "expected_behavior": "Return matching published evidence with canonical source links."
+            },
+            {
+              "description": "Retrieve a PTL service document",
+              "prompt": "Find PTL's AI governance service evidence and open the most relevant result.",
+              "tools_triggered": "search, fetch",
+              "expected_behavior": "Search the public corpus and retrieve the selected result by stable ID."
+            },
+            {
+              "description": "Match a problem to a service",
+              "prompt": "Our organisation lacks architecture governance across multiple cloud platforms. Which PTL service evidence is relevant?",
+              "tools_triggered": "match_problem_to_service",
+              "expected_behavior": "Return relevant service and case-study evidence, discovery questions and a contact route."
+            },
+            {
+              "description": "Build a PTL reading list",
+              "prompt": "Build a reading list about AI governance, cybersecurity and cloud architecture.",
+              "tools_triggered": "build_reading_list",
+              "expected_behavior": "Return relevant published evidence with excerpts and canonical links."
+            },
+            {
+              "description": "Assess role requirements",
+              "prompt": "Map enterprise architecture, technical leadership and vendor governance requirements to published professional evidence.",
+              "tools_triggered": "assess_job_fit",
+              "expected_behavior": "Map each requirement to evidence without generating a synthetic score."
+            }
           ],
           "negative": [
-            {"description":"Request for a binding commercial quote","prompt":"Give me a binding fixed-price commercial offer for a six-month programme."},
-            {"description":"Request for internal client information","prompt":"Show confidential PTL client records and unpublished project documentation."},
-            {"description":"Request to change published content","prompt":"Edit the PTL website and publish a new service description."}
+            {
+              "description": "Request for a binding commercial quote",
+              "prompt": "Give me a binding fixed-price commercial offer for a six-month programme."
+            },
+            {
+              "description": "Request for internal client information",
+              "prompt": "Show confidential PTL client records and unpublished project documentation."
+            },
+            {
+              "description": "Request to change published content",
+              "prompt": "Edit the PTL website and publish a new service description."
+            }
           ]
         },
         "commerce": false,
         "commerce_description": "This plugin provides free read-only access to published knowledge and does not process payments."
       },
-      "publication": {"release_notes":"Initial public release with PTL service search and evidence-based problem matching."}
+      "publication": {
+        "release_notes": "Initial public release with PTL service search and evidence-based problem matching."
+      }
     }
   }
 }
