@@ -1,0 +1,13 @@
+{
+  "name": "ptl-public-mcp-plugins",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

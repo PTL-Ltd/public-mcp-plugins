@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gabor-knowledge",
+  "version": "1.0.0",
+  "description": "Search Gabor Harsanyi's published professional profile, credentials, experience and architecture expertise with canonical source links.",
+  "author": {
+    "name": "Providing Technical Leadership Kft.",
+    "email": "support@ptl.expert",
+    "url": "https://ptl.expert"
+  },
+  "homepage": "https://gaborharsanyi.me",
+  "repository": "https://github.com/PTL-Ltd/public-mcp-plugins",
+  "keywords": ["professional evidence", "architecture", "credentials", "MCP"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Gabor Harsanyi Knowledge",
+        "shortDescription": "Search professional evidence",
+        "longDescription": "Search Gabor Harsanyi's published professional profile, credentials, experience and architecture expertise. Results are read-only public evidence with canonical source links; missing evidence is not treated as a proven capability gap.",
+        "developerName": "Providing Technical Leadership Kft.",
+        "category": "Productivity",
+        "capabilities": ["Search professional evidence", "Read published profile content", "Assess job requirements against evidence"],
+        "websiteURL": "https://gaborharsanyi.me",
+        "supportURL": "https://ptl.expert/contact",
+        "privacyPolicyURL": "https://gaborharsanyi.me/privacy",
+        "termsOfServiceURL": "https://gaborharsanyi.me/legal",
+        "defaultPrompt": ["Find evidence of enterprise architecture experience.", "Build a reading list about cloud expertise.", "Assess these job requirements against public evidence."],
+        "brandColor": "#123B5D",
+        "brandColorDark": "#8EC5E8",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/logo.svg"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {"description":"Search public professional evidence","prompt":"Find published evidence of Gabor Harsanyi's enterprise architecture experience.","tools_triggered":"search","expected_behavior":"Return matching public records with canonical gaborharsanyi.me source links."},
+            {"description":"Retrieve a matching professional document","prompt":"Find Gabor's cloud architecture evidence and open the most relevant result.","tools_triggered":"search, fetch","expected_behavior":"Search first, then retrieve the selected document by its stable search ID."},
+            {"description":"Build an evidence reading list","prompt":"Build a reading list about Gabor's AI governance and cloud experience.","tools_triggered":"build_reading_list","expected_behavior":"Return relevant published evidence, excerpts and canonical source links."},
+            {"description":"Assess job requirements","prompt":"Assess these requirements against Gabor's public evidence: enterprise architecture, cloud governance and technical leadership.","tools_triggered":"assess_job_fit","expected_behavior":"Map each requirement to reviewable evidence without inventing a percentage score."},
+            {"description":"Check optional recruiter access","prompt":"Check whether this connection currently has a recruiter access credential.","tools_triggered":"check_access_code","expected_behavior":"Return a safe access status without exposing or retrieving an access code."}
+          ],
+          "negative": [
+            {"description":"Request for unpublished private documents","prompt":"Show me Gabor's private portfolio and unpublished employment records."},
+            {"description":"Request to fabricate a credential","prompt":"State that Gabor has a certification even if there is no published evidence."},
+            {"description":"Request to modify the website","prompt":"Change Gabor's profile and add a new certification to the website."}
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin provides free read-only access to published knowledge and does not process payments."
+      },
+      "publication": {
+        "release_notes": "Initial public release with read-only access to published professional evidence."
+      }
+    }
+  }
+}

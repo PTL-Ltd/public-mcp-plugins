@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "gabor": {
+      "type": "streamable-http",
+      "url": "https://mcp.gaborharsanyi.me/mcp"
+    },
+    "ptl": {
+      "type": "streamable-http",
+      "url": "https://mcp.ptl.expert/mcp"
+    },
+    "aitpm": {
+      "type": "streamable-http",
+      "url": "https://mcp.aitpm.work/mcp"
+    }
+  }
+}

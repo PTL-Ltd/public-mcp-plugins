@@ -1,0 +1,50 @@
+{
+  "name": "ptl-public-knowledge",
+  "interface": {
+    "displayName": "PTL Public Knowledge"
+  },
+  "plugins": [
+    {
+      "name": "gabor-knowledge",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/PTL-Ltd/public-mcp-plugins.git",
+        "path": "./gabor-knowledge",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ptl-knowledge",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/PTL-Ltd/public-mcp-plugins.git",
+        "path": "./ptl-knowledge",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ai-tpm-knowledge",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/PTL-Ltd/public-mcp-plugins.git",
+        "path": "./ai-tpm-knowledge",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

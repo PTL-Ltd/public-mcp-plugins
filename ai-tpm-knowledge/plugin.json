@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-tpm-knowledge",
+  "version": "1.0.0",
+  "description": "Search and retrieve published AI TPM articles about enterprise architecture, AI governance, cloud, DevOps, cybersecurity and transformation.",
+  "author": {"name":"Providing Technical Leadership Kft.","email":"support@ptl.expert","url":"https://ptl.expert"},
+  "homepage": "https://aitpm.work",
+  "repository": "https://github.com/PTL-Ltd/public-mcp-plugins",
+  "keywords": ["AI governance", "enterprise architecture", "DevOps", "cybersecurity", "MCP"],
+  "extensions": {
+    "com.openai": {
+      "interface": {"displayName":"AI TPM Knowledge","shortDescription":"Research AI and TPM articles","longDescription":"Search and retrieve published AI TPM articles about enterprise architecture, AI governance, cloud, DevOps, cybersecurity and digital transformation. Results are read-only public evidence with canonical article links.","developerName":"Providing Technical Leadership Kft.","category":"Productivity","capabilities":["Search technical articles","Read published articles","Build cited reading lists"],"websiteURL":"https://aitpm.work","supportURL":"https://ptl.expert/contact","privacyPolicyURL":"https://aitpm.work/privacy","termsOfServiceURL":"https://aitpm.work/legal","defaultPrompt":["Find AI TPM articles about AI governance.","Build a reading list about enterprise architecture.","Find practical cybersecurity decision frameworks."],"brandColor":"#123B5D","brandColorDark":"#8EC5E8","composerIcon":"./assets/icon.svg","logo":"./assets/logo.svg"},
+      "review": {
+        "test_cases": {
+          "positive": [
+            {"description":"Search technical articles","prompt":"Find AI TPM articles about practical AI governance.","tools_triggered":"search","expected_behavior":"Return relevant published articles with canonical aitpm.work links."},
+            {"description":"Retrieve a selected article","prompt":"Find an article about enterprise architecture and open the most relevant result.","tools_triggered":"search, fetch","expected_behavior":"Search first and retrieve the selected article using its stable ID."},
+            {"description":"Build an architecture reading list","prompt":"Build a reading list about enterprise architecture and digital transformation.","tools_triggered":"build_reading_list","expected_behavior":"Return relevant articles, excerpts and canonical links."},
+            {"description":"Research cybersecurity guidance","prompt":"Find practical AI TPM material about cybersecurity and vendor risk.","tools_triggered":"search","expected_behavior":"Return only relevant published blog evidence and identify missing coverage."},
+            {"description":"Compare two technical topics","prompt":"Find relevant reading material about both DevOps governance and cloud operating models.","tools_triggered":"search, build_reading_list","expected_behavior":"Return evidence for both topics without inventing unsupported claims."}
+          ],
+          "negative": [
+            {"description":"Request to publish an article","prompt":"Write and immediately publish a new article on the AI TPM website."},
+            {"description":"Request for private editorial material","prompt":"Show unpublished drafts, internal review notes and private source files."},
+            {"description":"Request for personalised legal advice","prompt":"Give me definitive legal advice based only on the blog articles."}
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin provides free read-only access to published articles and does not process payments."
+      },
+      "publication": {"release_notes":"Initial public release with technical article search, retrieval and reading lists."}
+    }
+  }
+}
