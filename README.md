@@ -13,7 +13,7 @@ Public, metadata-only client packages for three read-only remote MCP servers ope
 
 ## Security boundary
 
-These are remote-only MCP integrations. Every `mcp.json` uses `streamable-http` with a public HTTPS URL. This repository contains no MCP server implementation, website source, private corpus, Cloudflare Worker source, credentials, access codes, challenge tokens, fixed authorization headers, `stdio` commands, executable lifecycle hooks or local server launch configuration.
+These are remote-only MCP integrations. Every `mcp.json` uses `streamable-http` with a public HTTPS URL. This repository contains no server or website source code, content data, credentials or secrets, fixed authorization headers, `stdio` commands, executable lifecycle hooks or local server launch configuration.
 
 Installing a package makes the AI client call the hosted endpoint. It does not install or execute the server locally.
 
@@ -49,6 +49,6 @@ Generated archives are written to `dist/` and are not committed.
 
 ## Repository contents
 
-Only public metadata, SVG brand assets, validation/build automation and documentation belong here. The private implementation remains in a separate private source repository.
+Only public metadata, SVG brand assets, validation/build automation and documentation belong here.
 
 See [SECURITY.md](SECURITY.md) before proposing changes.

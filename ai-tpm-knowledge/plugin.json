@@ -84,8 +84,8 @@
               "prompt": "Write and immediately publish a new article on the AI TPM website."
             },
             {
-              "description": "Request for private editorial material",
-              "prompt": "Show unpublished drafts, internal review notes and private source files."
+              "description": "Request for current news",
+              "prompt": "Summarise today's stock market headlines."
             },
             {
               "description": "Request for personalised legal advice",
